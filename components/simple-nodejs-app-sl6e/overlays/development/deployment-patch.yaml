@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-sl6e
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-razn-tenant/nodejs-users/simple-nodejs-app-sl6e@sha256:fb3f109f00443bfb4883af93ac0fd90edb30514ec6cdcb42eb211aab3b36485b
+        name: my-nodejs
+        resources: {}
+status: {}
